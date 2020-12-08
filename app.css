@@ -1,1 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 90%;
+  border-radius: 20px;
+  position: relative;
+  padding-bottom: 50px;
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+  height: 100px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.illustration-mobile {
+  position: absolute;
+}
+
+.woman-mobile {
+  position: absolute;
+  width: 230px;
+  top: -95px;
+  left: 40px;
+}
+
+.bg-mobile {
+  position: absolute;
+  width: 205px;
+  top: 0;
+  left: 65px;
+}
+
+.faq {
+  position: relative;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 10px 0;
+  margin: 0 20px;
+}
+
+.illustration .illustration-desktop {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto 10px;
+  font-size: 2rem;
+  color: hsl(238, 29%, 16%);
+}
+
+.faq-title {
+  font-weight: 400;
+  font-size: 13px;
+  color: hsl(237, 12%, 33%);
+}
+
+.faq-text {
+  display: none;
+  color: hsl(240, 6%, 50%);
+}
+
+.toggle-button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  transition: 0.3s ease;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.faq.active .faq-title {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+.faq.active .faq-text {
+  display: block;
+  width: 250px;
+  line-height: 1.5;
+}
+
+.faq.active .toggle-button {
+  transform: rotate(180deg);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
