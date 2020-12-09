@@ -132,3 +132,57 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+    overflow: hidden;
+  }
+
+  .illustration::before {
+    content: url(images/illustration-woman-online-desktop.svg);
+    position: absolute;
+    top: 7rem;
+    left: -7rem;
+  }
+
+  .illustration::after {
+    content: url(images/bg-pattern-desktop.svg);
+    position: absolute;
+    top: -15rem;
+    left: -37rem;
+  }
+
+  .faq-container {
+    width: 45%;
+    padding-top: 50px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .faq-title {
+    font-size: 16px;
+  }
+  .faq-text {
+    font-size: 14px;
+  }
+
+  .faq.active .faq-title {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .box::before {
+    content: url(images/illustration-box-desktop.svg);
+    position: fixed;
+    top: 27rem;
+    left: calc(50vw - 460px - 131px);
+    z-index: 10;
+  }
+}
